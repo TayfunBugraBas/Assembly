@@ -11,7 +11,7 @@ jal procedure     # prosedür çağrısı
 
 procedure:
 lb  $t2, 0($t0)   #byte olarak al
-lb  $t3, 0($s0)    
+lb  $t3, 0($s0)    # her bir karakter hafızada toplam 1 byte yer kaplamaktadır
 sb   $t2, 0($t1)   #byte olarak kaydet
 sb   $t3, 0($s1)
 
