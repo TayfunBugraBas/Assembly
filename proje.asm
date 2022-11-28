@@ -23,6 +23,9 @@ procedure:
 beq $t0, $s1, bitti 
 
 lb  $t2, 0($t0)   #byte olarak al
+
+beq $t2,'*',bitti
+
 sb   $t2, 0($t1)   #byte olarak kaydet
 
 addi $t0, $t0, 1   #üzerine 1 ekle
